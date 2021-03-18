@@ -1,4 +1,5 @@
-(ns modix.main)
+(ns modix.main 
+  (:require [modix.handlers.cli :as h.cli]))
 
 ;; (defn handle-create-clothe []
   
@@ -6,13 +7,14 @@
 
 (defn handle-option [option]
   (case option
-    "1" (handlers.cli/create-clothe)
+    "1" (h.cli/create-clothe)
     "2" (println "Editando...")
     "3" (println "Excluindo...")
     "4" (println "Listando...")
     (println "nao vai ta dando")))
 
 (defn show-menu-options []
+  (println)
   (println "1) CADASTRAR")
   (println "2) EDITAR")
   (println "3) EXCLUIR")
@@ -22,16 +24,16 @@
 (defn show-menu
   []
   (println "Olá, você esta no Modix!")
-  (show-menu-options)
   (println "O que gostaria de fazer hoje?: ")
-
+  (show-menu-options)
+  
   (loop [option (read-line)]
     (if (= option "0")
       (println "Até logo!")
       (do
         (handle-option option)
+        (show-menu-options)
         (recur (read-line)))))) 
-
 
 (defn -main [& args]
   (show-menu))
