@@ -11,3 +11,6 @@
         style (ask-question "Qual o tipo da roupa?")]
     (c.clothes/create name color style))
   (println "Legal, está cadastrado! Agora vamos escolher uma nova opção"))
+
+(defn list-all-clothes []
+  (c.clothes/list-all-clothes))

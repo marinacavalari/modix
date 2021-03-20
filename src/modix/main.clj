@@ -5,12 +5,13 @@
   
 ;;   (create-clothe name asd))
 
+
 (defn handle-option [option]
   (case option
     "1" (h.cli/create-clothe)
     "2" (println "Editando...")
     "3" (println "Excluindo...")
-    "4" (println "Listando...")
+    "4" (println (h.cli/list-all-clothes))
     (println "nao vai ta dando")))
 
 (defn show-menu-options []
