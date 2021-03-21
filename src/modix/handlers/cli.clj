@@ -12,5 +12,9 @@
     (c.clothes/create name color style))
   (println "Legal, está cadastrado! Agora vamos escolher uma nova opção"))
 
+(defn organized-clothe [{:clothe/keys [name style color]}]
+  (println name color style))
+
 (defn list-all-clothes []
-  (c.clothes/list-all-clothes))
+  (mapv organized-clothe (c.clothes/list-all-clothes)))
+

@@ -12,3 +12,8 @@
   (swap! clothes-db dissoc (:id clothe)))
 
 (defn get-all-clothes [] @clothes-db)
+
+(get-all-clothes)
+
+(->> (vals (get-all-clothes))
+     (map #(select-keys % [:name])))
