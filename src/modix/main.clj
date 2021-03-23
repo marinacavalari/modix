@@ -10,7 +10,7 @@
   (case option
     "1" (h.cli/create-clothe)
     "2" (println "Editando...")
-    "3" (println "Excluindo...")
+    "3" (h.cli/delete-clothe)
     "4" (h.cli/list-all-clothes)
     (println "nao vai ta dando")))
 

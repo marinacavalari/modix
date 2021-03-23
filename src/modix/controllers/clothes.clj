@@ -1,4 +1,4 @@
-(ns modix.controllers.clothes 
+(ns modix.controllers.clothes
   (:require [modix.db.clothes :as db.clothes]
             [modix.logic.clothes :as l.clothes]))
 
@@ -9,3 +9,6 @@
 
 (defn list-all-clothes []
   (vals (db.clothes/get-all-clothes)))
+
+(defn delete [id]
+  (db.clothes/delete-by-id! id))

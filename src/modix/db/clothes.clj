@@ -5,15 +5,18 @@
 (defn uuid []
   (str (java.util.UUID/randomUUID)))
 
-(defn upsert! [clothe]
-  (swap! clothes-db assoc (or (:id clothe) (uuid)) clothe))
+(defn upsert! [{:clothe/keys [id] :as clothe}]
+  (if id
+    (swap! clothes-db assoc id clothe)
+    (let [new-id (uuid)]
+      (swap! clothes-db assoc new-id (assoc clothe :clothe/id new-id)))))
 
-(defn delete! [clothe]
-  (swap! clothes-db dissoc (:id clothe)))
+(defn delete-by-id! [id]
+  (swap! clothes-db dissoc id))
 
 (defn get-all-clothes [] @clothes-db)
 
-(get-all-clothes)
+(defn get-by-id [id]
+  (get @clothes-db id))
 
-(->> (vals (get-all-clothes))
-     (map #(select-keys % [:name])))
+

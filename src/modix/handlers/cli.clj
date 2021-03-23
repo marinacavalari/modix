@@ -12,9 +12,13 @@
     (c.clothes/create name color style))
   (println "Legal, está cadastrado! Agora vamos escolher uma nova opção"))
 
-(defn organized-clothe [{:clothe/keys [name style color]}]
-  (println name color style))
+(defn organized-clothe [{:clothe/keys [id name style color]}]
+  (println id name color style))
 
 (defn list-all-clothes []
   (mapv organized-clothe (c.clothes/list-all-clothes)))
 
+(defn delete-clothe []
+ (let [id (ask-question "Qual peça gostaria de remover?")]
+   (c.clothes/delete id))
+  (println "a peça já foi removida!"))
