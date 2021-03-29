@@ -18,7 +18,17 @@
 (defn list-all-clothes []
   (mapv organized-clothe (c.clothes/list-all-clothes)))
 
-(defn delete-clothe []
- (let [id (ask-question "Qual peça gostaria de remover?")]
-   (c.clothes/delete id))
-  (println "a peça já foi removida!"))
+;; (defn delete-clothe []
+;;  (let [id (ask-question "Qual peça gostaria de remover?")]
+;;    (c.clothes/delete id))
+;;   (println "a peça já foi removida!"))
+
+(defn update-clothe []
+  (println "Essas são as peças disponiveis:" )
+  (list-all-clothes)
+  (let [id (ask-question "Qual peça gostaria de atualizar?")
+        name (ask-question "Qual o novo nome?")
+        color (ask-question "Qual a nova cor?")
+        style (ask-question "Qual o novo estilo?")]
+    (c.clothes/update-clothe id name color style))
+  (println "peça atualizada!"))

@@ -9,8 +9,8 @@
 (defn handle-option [option]
   (case option
     "1" (h.cli/create-clothe)
-    "2" (println "Editando...")
-    "3" (h.cli/delete-clothe)
+    "2" (h.cli/update-clothe)
+    ;; "3" (h.cli/delete-clothe)
     "4" (h.cli/list-all-clothes)
     (println "nao vai ta dando")))
 

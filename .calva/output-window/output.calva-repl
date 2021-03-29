@@ -1,0 +1,213 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.25.8"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉modix.main꞉> 
+; Jack-in done.
+clj꞉modix.main꞉> 
+#'modix.db.clothes/clothes-schema
+clj꞉modix.db.clothes꞉> 
+nil
+clj꞉modix.db.clothes꞉> 
+#<promise$settable_future$reify__4751@2dc469c5: 
+  {:db-before datomic.db.Db@e15320c5,
+   :db-after datomic.db.Db@77e770c2,
+   :tx-data
+   [#datom[13194139534312 50 #inst "2021-03-29T00:39:42.654-00:00" 13194139534312 true] #datom[63 10 :clothe/name 13194139534312 true] #datom[63 40 23 13194139534312 true] #datom[63 41 35 13194139534312 true] #datom[64 10 :clothe/style 13194139534312 true] #datom[64 40 23 13194139534312 true] #datom[64 41 35 13194139534312 true] #datom[65 10 :clothe/color 13194139534312 true] #datom[65 40 23 13194139534312 true] #datom[65 41 35 13194139534312 true] #datom[66 10 :clothe/id 13194139534312 true] #datom[66 40 56 13194139534312 true] #datom[66 41 35 13194139534312 true] #datom[66 42 38 13194139534312 true] #datom[0 13 65 13194139534312 true] #datom[0 13 64 13194139534312 true] #datom[0 13 66 13194139534312 true] #datom[0 13 63 13194139534312 true]],
+   :tempids {-9223301668109598143 63, -9223301668109598142 64, -9223301668109598141 65, -9223301668109598140 66}}>
+clj꞉modix.db.clothes꞉> 
+; Execution error (ArityException) at modix.db.clothes/eval7257 (form-init1700360677327947551.clj:40).
+; Wrong number of args (2) passed to: datomic.api/query
+clj꞉modix.db.clothes꞉> 
+; Execution error (ArityException) at modix.db.clothes/eval7259 (form-init1700360677327947551.clj:40).
+; Wrong number of args (2) passed to: datomic.api/query
+clj꞉modix.db.clothes꞉> 
+datomic.db.Db@77e770c2
+clj꞉modix.db.clothes꞉> 
+#{}
+clj꞉modix.db.clothes꞉> 
+#{[:clothe/color :db.type/string :db.cardinality/one] [:db.alter/attribute :db.type/ref :db.cardinality/many] [:db.install/function :db.type/ref :db.cardinality/many] [:db.install/valueType :db.type/ref :db.cardinality/many] [:db.excise/attrs :db.type/ref :db.cardinality/many] [:db/ident :db.type/keyword :db.cardinality/one] [:db.excise/before :db.type/instant :db.cardinality/one] [:db/index :db.type/boolean :db.cardinality/one] [:db/fn :db.type/fn :db.cardinality/one] [:db/fulltext :db.type/boolean :db.cardinality/one] [:db/unique :db.type/ref :db.cardinality/one] [:clothe/name :db.type/string :db.cardinality/one] [:db.excise/beforeT :db.type/long :db.cardinality/one] [:db.sys/partiallyIndexed :db.type/boolean :db.cardinality/one] [:db/isComponent :db.type/boolean :db.cardinality/one] [:db/lang :db.type/ref :db.cardinality/one] [:db.sys/reId :db.type/ref :db.cardinality/one] [:db.install/partition :db.type/ref :db.cardinality/many] [:db/txInstant :db.type/instant :db.cardinality/one] [:db/valueType :db.type/ref :db.cardinality/one] [:db/cardinality :db.type/ref :db.cardinality/one] [:db/excise :db.type/ref :db.cardinality/one] [:db/doc :db.type/string :db.cardinality/one] [:fressian/tag :db.type/keyword :db.cardinality/one] [:db/noHistory :db.type/boolean :db.cardinality/one] [:clothe/id :db.type/uuid :db.cardinality/one] [:db.install/attribute :db.type/ref :db.cardinality/many] [:clothe/style :db.type/string :db.cardinality/one] [:db/code :db.type/string :db.cardinality/one]}
+clj꞉modix.db.clothes꞉> 
+"fa9c1bed-513d-4397-9604-d47cd9e6cbef"
+clj꞉modix.db.clothes꞉> 
+; Error printing return value (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/wrong-type-for-attribute Value 770e36e1-5acc-470d-9f44-2053c12249e4 is not a valid :uuid for attribute :clothe/id
+clj꞉modix.db.clothes꞉> 
+[#:clothe{:id "5dbb4907-21b6-4f90-82bd-84c49c9763c8", :style "casual", :color "azul", :name "jaqueta"}]
+clj꞉modix.db.clothes꞉> 
+; Error printing return value (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/wrong-type-for-attribute Value 1b9909c6-2867-4651-ae89-1139a04e1edb is not a valid :uuid for attribute :clothe/id
+clj꞉modix.db.clothes꞉> 
+#object[datomic.peer.Connection 0x46cfc6dc "{:unsent-updates-queue 0, :pending-txes 0, :next-t 1001, :basis-t 1000, :index-rev 0, :db-id \"modix-301f296e-9d14-4c98-b6ab-7ccffaa8bb39\"}"]
+clj꞉modix.db.clothes꞉> 
+#{}
+clj꞉modix.db.clothes꞉> 
+; Error printing return value (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/wrong-type-for-attribute Value 93bf25f2-ee9d-403a-8191-c5e2cc2c3718 is not a valid :uuid for attribute :clothe/id
+clj꞉modix.db.clothes꞉> 
+; Error printing return value (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/wrong-type-for-attribute Value ba123566-c3ab-4b45-92b7-b6281424a244 is not a valid :uuid for attribute :clothe/id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/uuid
+clj꞉modix.db.clothes꞉> 
+#<promise$settable_future$reify__4751@64fae127: 
+  {:db-before datomic.db.Db@77e770c2,
+   :db-after datomic.db.Db@d8ff7572,
+   :tx-data
+   [#datom[13194139534313 50 #inst "2021-03-29T01:17:03.279-00:00" 13194139534313 true] #datom[17592186045418 66 #uuid "8e3c12bd-eaa3-4876-b103-6ec1fc077840" 13194139534313 true] #datom[17592186045418 64 "casual" 13194139534313 true] #datom[17592186045418 65 "azul" 13194139534313 true] #datom[17592186045418 63 "jaqueta" 13194139534313 true]],
+   :tempids {-9223301668109598135 17592186045418}}>
+clj꞉modix.db.clothes꞉> 
+#{["jaqueta"]}
+clj꞉modix.db.clothes꞉> 
+"jaqueta"
+clj꞉modix.db.clothes꞉> 
+nil
+clj꞉modix.db.clothes꞉> 
+"jaqueta"
+clj꞉modix.db.clothes꞉> 
+; Syntax error reading source at (REPL:26:48).
+; Map literal must contain an even number of forms
+clj꞉modix.db.clothes꞉> 
+; Syntax error reading source at (REPL:26:48).
+; Map literal must contain an even number of forms
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-all-clothes
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-all-clothes
+clj꞉modix.db.clothes꞉> 
+; Execution error (ArityException) at modix.db.clothes/eval7318 (form-init1700360677327947551.clj:53).
+; Wrong number of args (1) passed to: modix.db.clothes/get-all-clothes
+clj꞉modix.db.clothes꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/too-few-inputs Query expected 2 inputs but received 1
+clj꞉modix.db.clothes꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/too-few-inputs Query expected 2 inputs but received 1
+clj꞉modix.db.clothes꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/too-few-inputs Query expected 2 inputs but received 1
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-all-clothes
+clj꞉modix.db.clothes꞉> 
+[{:db/id 17592186045418,
+  :clothe/name "jaqueta",
+  :clothe/style "casual",
+  :clothe/color "azul",
+  :clothe/id #uuid "8e3c12bd-eaa3-4876-b103-6ec1fc077840"}]
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-all-clothes
+clj꞉modix.db.clothes꞉> 
+[#:clothe{:id #uuid "8e3c12bd-eaa3-4876-b103-6ec1fc077840", :name "jaqueta", :color "azul", :style "casual"}]
+clj꞉modix.db.clothes꞉> 
+#'modix.db.config/datomic-db
+clj꞉modix.db.config꞉> 
+#'modix.db.clothes/upsert!
+clj꞉modix.db.clothes꞉> 
+#'modix.controllers.clothes/create
+clj꞉modix.controllers.clothes꞉> 
+; Execution error (ArityException) at modix.controllers.clothes/eval7347 (form-init1700360677327947551.clj:20).
+; Wrong number of args (1) passed to: modix.controllers.clothes/create
+clj꞉modix.controllers.clothes꞉> 
+; Execution error (NullPointerException) at modix.db.config/datomic-db (form-init1700360677327947551.clj:15).
+; null
+clj꞉modix.controllers.clothes꞉> 
+; Execution error (NullPointerException) at modix.db.config/datomic-db (form-init1700360677327947551.clj:15).
+; null
+clj꞉modix.controllers.clothes꞉> 
+; Execution error (NullPointerException) at modix.db.config/datomic-db (form-init1700360677327947551.clj:15).
+; null
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.config/datomic-db
+clj꞉modix.db.config꞉> 
+#'modix.db.config/datomic-conn
+clj꞉modix.db.config꞉> 
+; Execution error (ArityException) at modix.db.clothes/get-by-id (form-init1700360677327947551.clj:12).
+; Wrong number of args (1) passed to: modix.db.config/datomic-db
+clj꞉modix.controllers.clothes꞉> 
+; Execution error (ArityException) at modix.db.clothes/get-by-id (form-init1700360677327947551.clj:12).
+; Wrong number of args (1) passed to: modix.db.config/datomic-db
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/upsert!
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+; Execution error at datomic.datalog/eval-rule$fn (datalog.clj:1450).
+; Unable to find data source: $__in__2 in: ($ $__in__2)
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+; Execution error at datomic.datalog/eval-rule$fn (datalog.clj:1450).
+; Unable to find data source: $__in__2 in: ($ $__in__2)
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+; Execution error (Exceptions$IllegalArgumentExceptionInfo) at datomic.error/arg (error.clj:57).
+; :db.error/invalid-data-source Nil or missing data source. Did you forget to pass a database argument?
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+; Execution error at datomic.datalog/eval-rule$fn (datalog.clj:1450).
+; Unable to find data source: $__in__2 in: ($ $__in__2)
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#<promise$settable_future$reify__4751@5bc0ba59: 
+  {:db-before datomic.db.Db@d8ff7572,
+   :db-after datomic.db.Db@6aeeb9b4,
+   :tx-data
+   [#datom[13194139534315 50 #inst "2021-03-29T20:23:08.182-00:00" 13194139534315 true] #datom[17592186045420 63 "azul" 13194139534315 true] #datom[17592186045420 65 "rosa" 13194139534315 true] #datom[17592186045420 64 "verde" 13194139534315 true] #datom[17592186045420 66 #uuid "49cb77e0-a931-4ee3-8a17-1ee2422753c5" 13194139534315 true]],
+   :tempids {-9223301668109598134 17592186045420}}>
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+nil
+; Execution error at datomic.datalog/eval-rule$fn (datalog.clj:1450).
+; Unable to find data source: $__in__2 in: ($ $__in__2)
+clj꞉modix.controllers.clothes꞉> 
+#'modix.db.clothes/get-by-id
+clj꞉modix.db.clothes꞉> 
+#<promise$settable_future$reify__4751@77c7a267: 
+  {:db-before datomic.db.Db@6aeeb9b4,
+   :db-after datomic.db.Db@f51116cd,
+   :tx-data
+   [#datom[13194139534317 50 #inst "2021-03-29T20:24:15.866-00:00" 13194139534317 true] #datom[17592186045422 63 "azul" 13194139534317 true] #datom[17592186045422 65 "rosa" 13194139534317 true] #datom[17592186045422 64 "verde" 13194139534317 true] #datom[17592186045422 66 #uuid "4671d871-67b6-473e-b775-caee413c1942" 13194139534317 true]],
+   :tempids {-9223301668109598133 17592186045422}}>
+clj꞉modix.controllers.clothes꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.APersistentMap$ValSeq/first (APersistentMap.java:236).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.Map$Entry (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.Map$Entry is in module java.base of loader 'bootstrap')
+clj꞉modix.controllers.clothes꞉> 
+#'modix.controllers.clothes/list-all-clothes
+clj꞉modix.controllers.clothes꞉> 
+[#:clothe{:id #uuid "8e3c12bd-eaa3-4876-b103-6ec1fc077840", :name "jaqueta", :color "azul", :style "casual"}
+ #:clothe{:id #uuid "49cb77e0-a931-4ee3-8a17-1ee2422753c5", :name "azul", :color "rosa", :style "verde"}
+ #:clothe{:id #uuid "4671d871-67b6-473e-b775-caee413c1942", :name "azul", :color "rosa", :style "verde"}]
+clj꞉modix.controllers.clothes꞉> 

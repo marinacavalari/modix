@@ -6,9 +6,17 @@
   (-> (l.clothes/new name color style)
       db.clothes/upsert!))
 
-
 (defn list-all-clothes []
-  (vals (db.clothes/get-all-clothes)))
+  (db.clothes/get-all-clothes))
 
-(defn delete [id]
-  (db.clothes/delete-by-id! id))
+;; (defn delete [id]
+;;   (db.clothes/delete-by-id! id))
+
+(defn update-clothe [id name color style]
+  (-> (db.clothes/get-by-id id)
+      (l.clothes/updating name color style)
+      db.clothes/upsert!))
+
+(list-all-clothes)
+
+(create "azul" "rosa" "verde")
