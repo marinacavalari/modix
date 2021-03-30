@@ -2,12 +2,12 @@
   (:require [datomic.api :as d]
             [modix.db.config :as db.config]))
 
-(defn uuid []
+(defn- uuid []
   (java.util.UUID/randomUUID))
 
 (defn get-by-id [id]
   (when id
-    (d/q '{:find [(pull ?clothe [:clothe/id :clothe/name :clothe/color :clothe/style]) .]
+    (d/q '{:find [(pull ?clothe [:clothe/id :clothe/name :clothe/color :clothe/style :clothe/status]) .]
            :in [$ ?id]
            :where [[?clothe :clothe/id ?id]]}
          (db.config/datomic-db)
@@ -21,7 +21,8 @@
 
 (defn get-all-clothes []
   (d/q '{:find [[(pull ?clothe [:clothe/id :clothe/name :clothe/color :clothe/style]) ...]]
-         :where [[?clothe :clothe/id ?id]]}
+         :where 
+         [[?clothe :clothe/status :enabled]]}
        (db.config/datomic-db)))
 
 (comment
@@ -38,17 +39,16 @@
                {:db/ident :clothe/id
                 :db/valueType :db.type/uuid
                 :db/cardinality :db.cardinality/one
-                :db/unique :db.unique/identity}])
+                :db/unique :db.unique/identity}
+               {:db/ident :clothe/status
+                :db/valueType :db.type/keyword
+                :db/cardinality :db.cardinality/one}])
 
   (d/transact (db.config/datomic-conn)
               [#:clothe{:id (uuid)
                         :style "casual"
                         :color "azul"
-                        :name "jaqueta"}])
+                        :name "jaqueta"
+                        :status :enabled}])
 
-  (d/q '{:find [?name]
-         :where [[?clothe :clothe/id]
-                 [?clothe :clothe/name ?name]]}
-       (db.config/datomic-db))
-
-  )
+ )

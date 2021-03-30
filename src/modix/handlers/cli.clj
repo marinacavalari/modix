@@ -18,10 +18,10 @@
 (defn list-all-clothes []
   (mapv organized-clothe (c.clothes/list-all-clothes)))
 
-;; (defn delete-clothe []
-;;  (let [id (ask-question "Qual peça gostaria de remover?")]
-;;    (c.clothes/delete id))
-;;   (println "a peça já foi removida!"))
+(defn delete-clothe []
+ (let [id (ask-question "Qual peça gostaria de remover?")]
+   (c.clothes/delete (java.util.UUID/fromString id)))
+  (println "a peça já foi removida!"))
 
 (defn update-clothe []
   (println "Essas são as peças disponiveis:" )

@@ -1,16 +1,12 @@
 (ns modix.main 
   (:require [modix.handlers.cli :as h.cli]))
 
-;; (defn handle-create-clothe []
-  
-;;   (create-clothe name asd))
-
 
 (defn handle-option [option]
   (case option
     "1" (h.cli/create-clothe)
     "2" (h.cli/update-clothe)
-    ;; "3" (h.cli/delete-clothe)
+    "3" (h.cli/delete-clothe)
     "4" (h.cli/list-all-clothes)
     (println "nao vai ta dando")))
 
@@ -30,7 +26,8 @@
   
   (loop [option (read-line)]
     (if (= option "0")
-      (println "Até logo!")
+      (println "Até logo!"
+               (System/exit 0))
       (do
         (handle-option option)
         (show-menu-options)
