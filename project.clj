@@ -12,6 +12,7 @@
                  [io.pedestal/pedestal.service "0.5.8"]
                  [io.pedestal/pedestal.jetty "0.5.8"]
                  [selmer/selmer "1.12.33"]]
+  :plugins [[lein-sass "0.5.0"]]
   :resource-paths ["config" "resources"]
   :profiles {:cli {:main modix.main-cli}
              :prod-web {:main modix.main-prod-web}
@@ -19,4 +20,7 @@
                    :dependencies [[io.pedestal/pedestal.service-tools "0.5.8"]]
                    :main modix.main-dev-web}}
   :aliases {:cli ["with-profile" "cli" "run"]}
+  :sass {:src "resources/sass"
+         :output-directory "resources/public/css"
+         :style :compressed}
   :repl-options {:init-ns modix.main-dev-web})

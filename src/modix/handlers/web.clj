@@ -36,6 +36,7 @@
 (def server-config
   {::server/port 8080
    ::server/type :jetty
+   ::server/resource-path "/public"
    ::server/routes (route/expand-routes (routes))})
 
 (def dev-server-config
