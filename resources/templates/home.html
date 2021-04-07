@@ -1,0 +1,33 @@
+<html>
+    <head>
+        
+    </head>
+    <body>  
+        MODIX 
+        <div class="menu"> menu
+        </div>
+        <div class="filtros"> 
+            FILTRO
+        </div>
+        <form action="/clothes" method="post" class="input"> 
+            <label for="name">Qual peça gostaria de incluir hoje?</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="color">Qual a cor da sua peça?</label>
+            <input type="text" id="color" name="color"><br><br>
+            <label for="style">Qual o estilo da sua peça?</label>
+            <input type="text" id="style" name="style"><br><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+
+        <div>
+            {% for clothe in clothes %}
+                <h2>{{ clothe.clothe/name }} </h2>
+                {{clothe.clothe/style}} {{clothe.clothe/color}}
+                <form action="/clothes/delete" method="post">
+                    <input type="hidden" value="{{ clothe.clothe/id }}" name="id">
+                    <input type="submit" value="Deletar">
+                </form>
+            {% endfor %}
+        </div>
+    </body>
+</html> 

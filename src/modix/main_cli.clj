@@ -1,4 +1,4 @@
-(ns modix.main 
+(ns modix.main-cli
   (:require [modix.handlers.cli :as h.cli]))
 
 
