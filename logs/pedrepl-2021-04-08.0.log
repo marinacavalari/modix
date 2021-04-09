@@ -8393,3 +8393,234 @@ org.apache.activemq.artemis.api.core.ActiveMQNotConnectedException: AMQ119010: C
 23:00:50.797 [qtp1755099981-211] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-500-webfont.ttf", :line 80}
 23:00:50.797 [qtp1755099981-211] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
 23:00:50.798 [qtp1755099981-211] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:07:50.553 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:07:50.553 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:07:50.556 [clojure-agent-send-off-pool-85] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 4913, :tid 232}
+23:07:50.558 [clojure-agent-send-off-pool-85] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 1.29, :phase :end, :pid 4913, :tid 232}
+23:07:50.559 [qtp1755099981-36] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fb6f6-9863-4d75-85e8-d1572f1539d4", :phase :start, :pid 4913, :tid 36}
+23:07:50.565 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fb6f6-9863-4d75-85e8-d1572f1539d4", :phase :end, :pid 4913, :tid 77}
+23:07:50.565 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 0, :id #uuid "606fb6f6-9863-4d75-85e8-d1572f1539d4", :pid 4913, :tid 77}
+23:07:50.567 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:07:50.574 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:07:50.574 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:07:50.577 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:07:50.618 [qtp1755099981-225] INFO  io.pedestal.http  - {:msg "GET /css/home.css", :line 80}
+23:07:50.618 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:07:50.619 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:07:50.684 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /img/delete.png", :line 80}
+23:07:50.684 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:07:50.685 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:07:50.719 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-500-webfont.woff2", :line 80}
+23:07:50.719 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:07:50.723 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:07:50.747 [qtp1755099981-225] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-500-webfont.woff", :line 80}
+23:07:50.747 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:07:50.749 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:07:50.763 [qtp1755099981-225] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-500-webfont.ttf", :line 80}
+23:07:50.763 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:07:50.764 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:08:24.723 [qtp1755099981-225] INFO  io.pedestal.http  - {:msg "GET /css/home.css.map", :line 80}
+23:08:24.723 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:08:24.723 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy"}, :line 111}
+23:10:09.284 [qtp1755099981-225] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:10:09.285 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:09.292 [clojure-agent-send-off-pool-86] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 4913, :tid 233}
+23:10:09.296 [clojure-agent-send-off-pool-86] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 3.09, :phase :end, :pid 4913, :tid 233}
+23:10:09.300 [qtp1755099981-225] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:09.346 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /css/home.css", :line 80}
+23:10:09.346 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:09.347 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:09.390 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /img/header.png", :line 80}
+23:10:09.390 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:09.391 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:10:09.391 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:09.391 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:09.393 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:10:09.399 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /img/delete.png", :line 80}
+23:10:09.399 [qtp1755099981-211] INFO  io.pedestal.http  - {:msg "GET /fonts/the_hills.ttf", :line 80}
+23:10:09.399 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:09.399 [qtp1755099981-211] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:09.400 [qtp1755099981-211] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:09.400 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:09.442 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:10:09.442 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:09.444 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:10:09.468 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.ttf", :line 80}
+23:10:09.468 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:09.469 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:09.577 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /favicon.ico", :line 80}
+23:10:09.577 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:09.578 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:10:10.432 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:10:10.433 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:10.441 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:10.535 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /css/home.css", :line 80}
+23:10:10.535 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:10.536 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:10.582 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:10:10.582 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /img/header.png", :line 80}
+23:10:10.582 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:10.583 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:10.582 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:10.584 [qtp1755099981-211] INFO  io.pedestal.http  - {:msg "GET /fonts/the_hills.ttf", :line 80}
+23:10:10.584 [qtp1755099981-211] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:10.584 [qtp1755099981-211] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:10.585 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:10:10.590 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /img/delete.png", :line 80}
+23:10:10.590 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:10.591 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:10.630 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:10:10.630 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:10.632 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:10:10.639 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.ttf", :line 80}
+23:10:10.639 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:10:10.640 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:10:10.745 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /favicon.ico", :line 80}
+23:10:10.745 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:10:10.747 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:20:46.448 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:20:46.448 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:20:46.450 [clojure-agent-send-off-pool-87] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 4913, :tid 235}
+23:20:46.452 [clojure-agent-send-off-pool-87] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 1.05, :phase :end, :pid 4913, :tid 235}
+23:20:46.453 [qtp1755099981-36] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fb9fe-1f1c-4b18-bd43-35ed2174fb3a", :phase :start, :pid 4913, :tid 36}
+23:20:46.458 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fb9fe-1f1c-4b18-bd43-35ed2174fb3a", :phase :end, :pid 4913, :tid 77}
+23:20:46.458 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 0, :id #uuid "606fb9fe-1f1c-4b18-bd43-35ed2174fb3a", :pid 4913, :tid 77}
+23:20:46.458 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:20:46.464 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:20:46.464 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:20:46.466 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:20:46.509 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /css/home.css", :line 80}
+23:20:46.510 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:20:46.510 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:20:46.559 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /img/delete.png", :line 80}
+23:20:46.559 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:20:46.560 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:20:46.587 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:20:46.587 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:20:46.589 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:20:46.619 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:20:46.620 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:20:46.621 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:20:53.119 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "POST /clothes/delete", :line 80}
+23:20:53.120 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:20:53.128 [qtp1755099981-191] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fba05-b018-4c09-9932-0e4fe1d28e26", :phase :start, :pid 4913, :tid 191}
+23:20:53.138 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fba05-b018-4c09-9932-0e4fe1d28e26", :phase :end, :pid 4913, :tid 77}
+23:20:53.138 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 0, :id #uuid "606fba05-b018-4c09-9932-0e4fe1d28e26", :pid 4913, :tid 77}
+23:20:53.139 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:20:53.145 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:20:53.145 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:20:53.147 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:20:53.238 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:20:53.238 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:20:53.239 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:20:53.264 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:20:53.264 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:20:53.280 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:21:11.321 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:21:11.321 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:21:11.323 [qtp1755099981-191] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fba17-ca8f-4c70-93d0-13857de5ff5d", :phase :start, :pid 4913, :tid 191}
+23:21:11.327 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fba17-ca8f-4c70-93d0-13857de5ff5d", :phase :end, :pid 4913, :tid 77}
+23:21:11.328 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 1, :id #uuid "606fba17-ca8f-4c70-93d0-13857de5ff5d", :pid 4913, :tid 77}
+23:21:11.328 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:21:11.334 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:21:11.334 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:21:11.337 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:21:11.446 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:21:11.447 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:21:11.448 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:21:11.476 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:21:11.476 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:21:11.478 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:21:22.980 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:21:22.980 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:21:22.985 [qtp1755099981-191] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fba22-abde-46f2-9277-5c7667afe8e7", :phase :start, :pid 4913, :tid 191}
+23:21:22.994 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fba22-abde-46f2-9277-5c7667afe8e7", :phase :end, :pid 4913, :tid 77}
+23:21:22.994 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 0, :id #uuid "606fba22-abde-46f2-9277-5c7667afe8e7", :pid 4913, :tid 77}
+23:21:22.996 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:21:23.003 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:21:23.003 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:21:23.006 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:21:23.122 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:21:23.122 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:21:23.124 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:21:23.142 [qtp1755099981-156] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:21:23.142 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:21:23.144 [qtp1755099981-156] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:25:22.143 [qtp1755099981-191] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:25:22.144 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:25:22.148 [clojure-agent-send-off-pool-88] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 4913, :tid 236}
+23:25:22.151 [clojure-agent-send-off-pool-88] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 1.68, :phase :end, :pid 4913, :tid 236}
+23:25:22.152 [qtp1755099981-191] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbb12-18ca-422a-9735-d040c445c748", :phase :start, :pid 4913, :tid 191}
+23:25:22.162 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbb12-18ca-422a-9735-d040c445c748", :phase :end, :pid 4913, :tid 77}
+23:25:22.162 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 1, :id #uuid "606fbb12-18ca-422a-9735-d040c445c748", :pid 4913, :tid 77}
+23:25:22.162 [qtp1755099981-191] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:25:22.170 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:25:22.170 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:25:22.173 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:25:22.219 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /css/home.css", :line 80}
+23:25:22.219 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:25:22.220 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:25:22.347 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:25:22.347 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:25:22.349 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:25:22.360 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:25:22.360 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:25:22.361 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:25:22.369 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.ttf", :line 80}
+23:25:22.369 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:25:22.370 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:27:10.289 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:27:10.289 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:27:10.294 [clojure-agent-send-off-pool-89] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 4913, :tid 237}
+23:27:10.297 [clojure-agent-send-off-pool-89] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 2.7, :phase :end, :pid 4913, :tid 237}
+23:27:10.299 [qtp1755099981-36] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbb7e-4d99-4e7f-b5eb-23f3f87e2b57", :phase :start, :pid 4913, :tid 36}
+23:27:10.310 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbb7e-4d99-4e7f-b5eb-23f3f87e2b57", :phase :end, :pid 4913, :tid 77}
+23:27:10.310 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 0, :id #uuid "606fbb7e-4d99-4e7f-b5eb-23f3f87e2b57", :pid 4913, :tid 77}
+23:27:10.311 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:27:10.316 [qtp1755099981-229] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:27:10.316 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:27:10.319 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:27:10.381 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /css/home.css", :line 80}
+23:27:10.381 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:27:10.382 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:27:10.513 [qtp1755099981-229] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:27:10.514 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:27:10.515 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:27:10.525 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:27:10.525 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:27:10.527 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:28:14.914 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:28:14.914 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:28:14.918 [clojure-agent-send-off-pool-90] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :phase :begin, :pid 4913, :tid 238}
+23:28:14.919 [clojure-agent-send-off-pool-90] INFO  datomic.kv-cluster  - {:event :kv-cluster/get-pod, :pod-key "pod-catalog", :msec 0.87, :phase :end, :pid 4913, :tid 238}
+23:28:14.919 [qtp1755099981-36] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbbbe-5f72-47e5-8c45-82bf42b4d721", :phase :start, :pid 4913, :tid 36}
+23:28:14.929 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbbbe-5f72-47e5-8c45-82bf42b4d721", :phase :end, :pid 4913, :tid 77}
+23:28:14.929 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 0, :id #uuid "606fbbbe-5f72-47e5-8c45-82bf42b4d721", :pid 4913, :tid 77}
+23:28:14.930 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:28:14.934 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:28:14.934 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:28:14.937 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:28:15.051 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:28:15.051 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:28:15.052 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:28:15.074 [qtp1755099981-172] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:28:15.075 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:28:15.078 [qtp1755099981-172] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:29:05.221 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "POST /clothes", :line 80}
+23:29:05.222 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:29:05.233 [qtp1755099981-36] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbbf1-8da5-4cc5-b0b0-723f1bed587a", :phase :start, :pid 4913, :tid 36}
+23:29:05.253 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/transact, :uuid #uuid "606fbbf1-8da5-4cc5-b0b0-723f1bed587a", :phase :end, :pid 4913, :tid 77}
+23:29:05.253 [clojure-agent-send-off-pool-8] INFO  datomic.peer  - {:event :peer/notify-data, :msec 1, :id #uuid "606fbbf1-8da5-4cc5-b0b0-723f1bed587a", :pid 4913, :tid 77}
+23:29:05.275 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Location"}, :line 111}
+23:29:05.292 [qtp1755099981-229] INFO  io.pedestal.http  - {:msg "GET /", :line 80}
+23:29:05.292 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:29:05.298 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "Strict-Transport-Security, X-Frame-Options, X-Content-Type-Options, X-Xss-Protection, X-Download-Options, X-Permitted-Cross-Domain-Policies, Content-Security-Policy, Content-Type"}, :line 111}
+23:29:05.357 [qtp1755099981-36] INFO  io.pedestal.http  - {:msg "GET /css/home.css", :line 80}
+23:29:05.357 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "", :allowed true, :line 84}
+23:29:05.358 [qtp1755099981-36] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" "X-Frame-Options, X-Xss-Protection, Last-Modified, X-Download-Options, Strict-Transport-Security, X-Permitted-Cross-Domain-Policies, Content-Length, X-Content-Type-Options, Content-Security-Policy, Content-Type"}, :line 111}
+23:29:05.474 [qtp1755099981-229] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff2", :line 80}
+23:29:05.474 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:29:05.476 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}
+23:29:05.521 [qtp1755099981-229] INFO  io.pedestal.http  - {:msg "GET /fonts/museo-sans-300-webfont.woff", :line 80}
+23:29:05.521 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors request processing", :origin "http://localhost:8080", :allowed true, :line 84}
+23:29:05.523 [qtp1755099981-229] INFO  io.pedestal.http.cors  - {:msg "cors response processing", :cors-headers {"Access-Control-Allow-Origin" "http://localhost:8080", "Access-Control-Allow-Credentials" "true", "Access-Control-Expose-Headers" ""}, :line 111}

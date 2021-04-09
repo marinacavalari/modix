@@ -34,7 +34,7 @@
     top: 0;
     left: 0;
     width: $leftbar-width;
-    background: #fab1a0;
+    background: #FBB3A3;
     .menu {
         position: absolute;
         left: 2em;
@@ -50,8 +50,8 @@
         width: 18em;
         height: 2.5em;
         margin: 0.5em;
-        border: 0.3em solid #f78970;
-        border-radius: 1em;
+        border: 0.1em solid #f78970;
+        border-radius: 0.4em;
         background: #fdd9d0;
         font-family: 'Museo Sans';
     }
@@ -60,9 +60,9 @@
         width: auto;
         height: 3em;
         margin: 0.5em;
-        border: 0.3em solid #218c74;
-        border-radius: 1em;
-        background: rgba(38, 161, 132, 0.358);
+        border: 0.1em solid #218c74;
+        border-radius: 0.4em;
+        background: #xfdd9d0;
         color: #218c74;
         left: 3.3em;
         font-size: large;
@@ -78,20 +78,22 @@
     min-height: calc(100% - 13em);
     .clothe {
         position: relative;
-        margin: 2em;
-        border: 0.3em solid #f78970;
-        border-radius: 1em;
+        margin: 3em;
+        border: 0.1em solid #f78970;
+        border-radius: 0.4em;
         background: #feede9;
         width: 15em;
-        height: 12em;
+        height: 24em;
         display: inline-block;
         font-family: 'Museo Sans';
+        align-items: center;
     }
     input {
-        $size: 2.5em;
+        $size: 0.9em;
+        opacity: 0.5;
         position: absolute;
-        right: -$size / 2;
-        top: -$size / 2;
+        right: 0.3em;
+        top: 0.3em;
         border: none;
         background: url("/img/delete.png") no-repeat center;
         background-size: 100%;
@@ -100,20 +102,31 @@
     }
     dl {
         font-family: 'Museo Sans';
+        position: relative;
+        top: 7.8em;
         display: inline-block;
         color: #218c74;
-        margin: 0.5em 0.5em 0.5em 0.5em;
-        font-size: 1.2em;
+        margin: 1em 1.3em 0.5em 2em;
+        font-size: 1em;
         align-items: center;
     }
     dt {
         font-family: 'Museo Sans';
+        position: relative;
+        top: 7.5em;
         display: inline-block;
         color: #218c74;
         margin: 0.5em;
         font-size: large;
         align-items: center;
         font-weight: bold;
-        font-size: 1.3em;
+        font-size: 1em;
+    }
+    .clotheimage {
+        position: absolute;
+        margin: 1em 1em 5em 1em;
+        width: 12em;
+        height: 14em;
+        right: 1em;
     }
 }
