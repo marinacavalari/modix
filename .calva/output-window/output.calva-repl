@@ -15,7 +15,7 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉modix.main-dev-web꞉> 
+clj꞉modix.main-dev-web꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉modix.main-dev-web꞉> 
 {:io.pedestal.http/port 8080,
@@ -78,9 +78,9 @@ clj꞉modix.main-dev-web꞉> 
    :error nil}],
  :io.pedestal.http/routes #function[modix.handlers.web/fn--17295],
  :io.pedestal.http/servlet
- #object[io.pedestal.http.servlet.FnServlet 0x45d9c902 "io.pedestal.http.servlet.FnServlet@45d9c902"],
+ #object[io.pedestal.http.servlet.FnServlet 0x5fa607f7 "io.pedestal.http.servlet.FnServlet@5fa607f7"],
  :io.pedestal.http/server
- #object[org.eclipse.jetty.server.Server 0x67ff2ded "Server@67ff2ded{STARTED}[9.4.18.v20190429]"],
+ #object[org.eclipse.jetty.server.Server 0x7c7b3ea8 "Server@7c7b3ea8{STARTED}[9.4.18.v20190429]"],
  :io.pedestal.http/join? false,
  :io.pedestal.http/stop-fn #function[io.pedestal.http.jetty/server/fn--22630]}
 clj꞉modix.main-dev-web꞉> 

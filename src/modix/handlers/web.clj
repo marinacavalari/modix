@@ -19,19 +19,20 @@
 
 (defn- clothes-create [{{:keys [name style color]} :form-params}]
   (c.clothes/create name style color)
-  {:status 201
+  {:status 303
+   :headers {"Location" "/"}
    :body {}})
 
 (defn- clothes-delete [{{:keys [id]} :form-params}]
   (c.clothes/delete (java.util.UUID/fromString id))
-  {:status 200
+  {:status 303
+   :headers {"Location" "/"}
    :body {}})
-  
 
 (defn routes []
   #{["/" :get (conj common-interceptors home) :route-name :home]
-    ["/clothes" :post (conj common-interceptors clothes-create home) :route-name :clothes-new]
-    ["/clothes/delete" :post (conj common-interceptors clothes-delete home) :route-name :clothes-delete]})
+    ["/clothes" :post (conj common-interceptors clothes-create) :route-name :clothes-new]
+    ["/clothes/delete" :post (conj common-interceptors clothes-delete) :route-name :clothes-delete]})
 
 (def server-config
   {::server/port 8080

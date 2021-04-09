@@ -1,35 +1,66 @@
 <html>
-    <head>
-        <link href="css/home.css" rel="stylesheet" >
-    </head>
-    <body><title> Modix </title>
-        <div class="header"><img src="/img/header.png"></div>
-        <div class="title"><img src="/img/logo.png"></div>
-       
-        <div class="filtros"> 
-            FILTRO
-        </div>
 
-        <div class="menu">
-        <form action="/clothes" method="post" class="input"> 
-            <label for="name">Qual peça gostaria de incluir hoje?</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="color">Qual a cor da sua peça?</label>
-            <input type="text" id="color" name="color"><br><br>
-            <label for="style">Qual o estilo da sua peça?</label>
-            <input type="text" id="style" name="style"><br><br>
-            <input type="submit" value="Cadastrar">
-        </form>
-        </div>
+<head>
+    <link href="css/home.css" rel="stylesheet">
+    <title>Modix</title>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no shrink-to-fit=no" />
+    <meta name="theme-color" content="#fab1a0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Modix">
+    <meta name="apple-mobile-web-app-title" content="Modix">
+    <meta name="msapplication-starturl" content="/">
+</head>
+
+<body>
+    <title> Modix </title>
+    <section class="header">
+
+        <h1 class="title">
+            <span class="sub">the</span>
+            <span class="main">Modix</span>
+        </h1>
+
+    </section>
+
+
+    <section class="leftbar">
+
+        <section class="menu">
+            <form action="/clothes" method="post" class="input">
+                <label for="name">Qual peça gostaria de incluir?</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="color">Qual a cor da sua peça?</label>
+                <input type="text" id="color" name="color"><br><br>
+                <label for="style">Qual o estilo da sua peça?</label>
+                <input type="text" id="style" name="style"><br><br>
+                <input class="create" type="submit" value="Cadastrar">
+            </form>
+        </section>
         <div>
-            {% for clothe in clothes %}
-                <h2>{{ clothe.clothe/name }} </h2>
-                {{clothe.clothe/style}} {{clothe.clothe/color}}
-                <form action="/clothes/delete" method="post">
-                    <input type="hidden" value="{{ clothe.clothe/id }}" name="id">
-                    <input type="submit" value="Deletar">
-                </form>
-            {% endfor %}
-        </div>
-    </body>
-</html> 
+    </section>
+    <section class="clothes">
+        {% for clothe in clothes %}
+        <section class="clothe">
+            <dl>
+                <dt>Roupa: </dt>
+                <dl>{{ clothe.clothe/name }}</dl>
+                <dt>Estilo: </dt>
+                <dl>{{clothe.clothe/color}}</dl>
+                <dt>Cor: </dt>
+                <dl>{{clothe.clothe/style}}</dl>
+            </dl>
+            <form action="/clothes/delete" method="post">
+                <input type="hidden" value="{{ clothe.clothe/id }}" name="id">
+                <input type="submit" value="">
+            </form>
+        </section>
+        {% endfor %}
+    </section>
+    </div>
+</body>
+
+</html>
